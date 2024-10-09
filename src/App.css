@@ -155,6 +155,19 @@ h2 {
   color: rgb(167, 75, 1);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
+  box-sizing: border-box; /* Include padding in width */
+  text-overflow: ellipsis; /* Optional: add ellipsis for overflowed text */
+  white-space: normal; /* Allow text to wrap */
+  overflow: visible; /* Allow text to overflow if needed */
+}
+
+.topCard h1, 
+.topCard p {
+  max-width: 100%; /* Ensure text doesn't exceed the card's width */
+  overflow-wrap: break-word; /* Wrap long words onto the next line */
+  white-space: normal; /* Ensure text wraps normally */
+  margin: 0; /* Remove default margin to prevent overflow */
+  padding: 0; /* Remove padding to ensure full visibility */
 }
 
 .topCard h2, .topCard p {
@@ -358,6 +371,22 @@ Link {
  
 }
 
+@media (max-width: 600px) {
+  .topCard {
+      width: 100%;  /* Full width for small screens */
+      margin-top: 24rem;    /* Remove margin that may cause overflow */
+      padding: 10px; /* Adjust padding if needed */
+  }
+  
+  /* Adjust other card styles if necessary */
+  .card {
+      width: 100%; /* Ensure other cards also take full width */
+      margin: 0;   /* Reset margin to avoid overflow */
+      padding: 10px; /* Adjust as necessary */
+      box-sizing: border-box; /* Include padding in width calculations */
+  }
+}
+
 @media (max-width: 480px) {
   #nav ul {
     font-size: .5rem; /* Further reduce font size for very small screens */
@@ -393,6 +422,17 @@ Link {
   #canvas3 {
     margin-left: 50%
   }
+  .topCard {
+    padding: 5px; /* Reduce padding for smaller screens */
+}
+
+.topCard h1 {
+    font-size: 1.5em; /* Reduce font size for smaller screens */
+}
+
+.topCard p {
+    font-size: 1em; /* Adjust paragraph font size */
+}
 }
 
 
