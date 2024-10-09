@@ -429,9 +429,38 @@ Link {
     font-size: .5rem; /* Further reduce font size for very small screens */
     padding: 0.3rem;
   }
-  .topCard h2, .topCard p {
-    font-size: 1.5rem;
+  #nav ul li a {
+    font-size: .5rem;
   }
+  #cavnas3 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 1rem;
+  }
+  .topCard {
+    top: 0;
+    left: .6rem;
+  }
+  .topCard p {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .topCard h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .topCard h1 {
+    font-size: 1rem; /* Reduce font size for smaller screens */
+}
+.topCard ul li {
+  font-size: .5rem; /* Show two items per row on smaller screens */
+}
+.topCard ul li img {
+  width: 2rem; /* Show two items per row on smaller screens */
+}
   .cards {
     margin-top: 3rem; /* Ensure space from video */
   }
@@ -450,32 +479,16 @@ Link {
   #card2 li {
     font-size: 1rem;
   }
-  h2 {
-    font-size: 1.8rem;
-  }
+  
   .cards {
     width: 100vw
   }
   #canvas3 {
     margin-left: 50%
   }
-  .topCard {
-    padding: 5px; /* Reduce padding for smaller screens */
-}
 
-.topCard h1 {
-    font-size: 1.5em; /* Reduce font size for smaller screens */
-}
 
-.topCard p {
-    font-size: 1em; /* Adjust paragraph font size */
-}
-.topCard ul li {
-  font-size: 1rem; /* One item per row for mobile */
-}
-.topCard ul li img {
-  width: 30%; /* Shrink images a bit more */
-}
+
 }
 
 
