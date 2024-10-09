@@ -34,9 +34,9 @@ function NavigationBar() {
             </ul>
         </nav>
         <div className="socials">
-          <a href="https://www.facebook.com/monarcaoutdoor" target="_blank" rel="noopener noreferrer"><img src={logo1} id="fbLogo"  style={{ width: '2rem', height: '2rem', cursor: 'pointer' }}/></a>
-          <a href="https://www.tiktok.com/@monarca.outdoor" target="_blank" rel="noopener noreferrer"><img src={logo2} id="tikTok"  style={{ width: '2rem', height: '2rem', cursor: 'pointer' }}/></a>
-          <a href="https://www.instagram.com/monarca.outdoor/" target="_blank" rel="noopener noreferrer"><img src={logo3} id="igLogo"  style={{ width: '2rem', height: '2rem', cursor: 'pointer' }}/></a>
+          <a href="https://www.facebook.com/monarcaoutdoor" target="_blank" rel="noopener noreferrer"><img src={logo1} id="fbLogo"  style={{ width: '1.5rem', height: '1.5rem', cursor: 'pointer' }}/></a>
+          <a href="https://www.tiktok.com/@monarca.outdoor" target="_blank" rel="noopener noreferrer"><img src={logo2} id="tikTok"  style={{ width: '1.5rem', height: '1.5rem', cursor: 'pointer' }}/></a>
+          <a href="https://www.instagram.com/monarca.outdoor/" target="_blank" rel="noopener noreferrer"><img src={logo3} id="igLogo"  style={{ width: '1.5rem', height: '1.5rem', cursor: 'pointer' }}/></a>
         </div>
     </>
     )
