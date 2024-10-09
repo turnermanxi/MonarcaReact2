@@ -401,8 +401,8 @@ Link {
 
 @media (max-width: 600px) {
   .topCard {
-      width: 100%;  /* Full width for small screens */
-      margin-top: 24rem;    /* Remove margin that may cause overflow */
+      width: 100vw;  /* Full width for small screens */
+      margin-top: 28rem;    /* Remove margin that may cause overflow */
       padding: 10px; /* Adjust padding if needed */
   }
   
@@ -439,10 +439,10 @@ Link {
     top: 1rem;
   }
   .topCard {
-    left: .8rem;
+    left: 1rem;
     width: 100vw;
     object-fit: cover;
-    margin-top: 28rem;
+    margin-top: 25rem;
   }
   .topCard p {
     font-size: 1rem;
@@ -483,7 +483,7 @@ Link {
   }
   
   .cards {
-    width: 100vw
+    width: 100vw;
   }
   #canvas3 {
     margin-left: 50%
