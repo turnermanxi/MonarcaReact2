@@ -439,8 +439,10 @@ Link {
     top: 1rem;
   }
   .topCard {
-    top: 0;
-    left: .6rem;
+    left: .8rem;
+    width: 100vw;
+    object-fit: cover;
+    margin-top: 28rem;
   }
   .topCard p {
     font-size: 1rem;
