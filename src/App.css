@@ -439,8 +439,8 @@ Link {
     top: 1rem;
   }
   .topCard {
-    left: 1rem;
-    width: 100vw;
+    
+    width: 105%;
     object-fit: cover;
     margin-top: 25rem;
   }
