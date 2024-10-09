@@ -7,7 +7,9 @@ function VideoPlayer() {
         <div id="video">
               <ReactPlayer
               url="/background.mov"
+              playsinline={true}
               volume= {0}
+              muted={true} 
               width="100%"
               height="100%"
               style={{ width: '100vw' }}
