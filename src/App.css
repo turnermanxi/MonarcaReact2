@@ -1,0 +1,399 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root, .topCard, .cards {
+  width: 100%; /* Ensures it uses the full width */
+}
+
+/* Root grid container for responsive layout */
+#root {
+  overflow: hidden; /* Hides any overflow */
+  width: 100vw;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Makes columns adjust dynamically */
+  position: relative;
+  background-color: #d8d8d8;
+  z-index: 1;
+  
+}
+
+/* Social icons */
+.socials {
+  position: fixed;
+  top: 35.5%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  z-index: 50; /* Keep socials above everything else */
+}
+
+a {
+  text-decoration: none;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(243, 243, 243);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8.5vh; /* Make height more dynamic */
+  /* box-shadow: 0px 5px 2px rgb(41, 40, 40); */
+  padding: 1rem;
+  z-index: 10;
+  flex-direction: row;
+  border: 1px light black;
+}
+
+#canvas2 {
+  width: 10vw;
+  height: 15vh;
+  position: relative;
+  top: 2rem;
+  left: 0;
+  z-index: 12;
+}
+
+#canvas3 {
+  width: 60vw;
+  height: 15vh;
+  position: fixed;
+  top: 85%;
+  margin-left: 60%;
+  z-index: 30;
+}
+
+#nav ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: rgb(167, 75, 1);
+  flex-wrap: nowrap;
+  flex-direction: row;
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+
+}
+
+#nav ul li a {
+  font-size: 1.3rem; /* 2% of the viewport width */
+}
+
+#nav ul li:hover {
+  color: rgb(0, 0, 0);
+  transition: color 0.25s;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+  transition: color 0.25s;
+
+}
+
+li, ul {
+  list-style: none;
+  text-decoration: none;
+  
+  
+}
+
+h2 {
+  font-size: 4.5rem;
+  box-sizing: border-box;
+  padding: 5rem;
+  text-align: left;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+
+/* Card styles */
+#cardList {
+  font-size: 2em;
+  font-weight: 600;
+  color: rgb(167, 75, 1);
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+#cardList li img {
+  background-color: rgb(167, 75, 1);
+  border-radius: 20px;
+}
+
+
+.topCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  margin-top: 36rem; /* Ensure space between video and cards */
+  z-index: 1; /* Ensure it's above the video */
+  padding: 2rem;
+  width: 100%;
+  background-color: black;
+  background-position: center; /* Keep background centered */
+  background-size: cover; /* Ensure background covers the entire card */
+  position: relative; /* Ensure content stays in place */
+  margin-left: -1rem;
+  color: rgb(167, 75, 1);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.topCard h2, .topCard p {
+  margin-bottom: 1rem;
+  font-size: 2rem; /* Smaller for responsiveness */
+}
+
+
+.topCard ul {
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.topCard li {
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.topCard img {
+  width: 50%; /* Make the image responsive */
+  height: auto;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center; /* Spread the cards */
+  align-items: flex-start;
+  z-index: 2; /* Ensure cards are above the video */
+  padding-top: 1rem;
+  padding-bottom: 10rem;
+  border: 1px solid transparent;
+  position: relative;
+  
+}
+
+
+/* Individual card styles */
+#card1, #card2 {
+  width: calc( 50% - 1rem ); 
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures the content is spaced */
+  align-items: center;
+  padding: 1.5rem;
+  position: relative;
+}
+
+#card1 img, #card2 img {
+  width: 100%; /* Full width of the card */
+  height: auto; /* Ensure aspect ratio is maintained */
+  object-fit: cover;
+}
+
+#card1 li {
+  font-size: 2rem;
+}
+
+#card2 li {
+  font-size: 2rem;
+}
+
+#card1 h2, #card2 h2 {
+  position: absolute;
+  top: 10%; /* Adjust to desired position */
+  left: 10%; /* Ensure it's placed on the card */
+  font-size: 2rem;
+  margin: 0;
+  text-align: left;
+  z-index: 2; /* Ensure it's above the image */
+  font-weight: bold;
+  color: #fff; /* Light color to contrast the background */
+}
+
+.icon {
+  width: 10vw;
+  height: 15vh;
+}
+
+img {
+  opacity: 90%;
+  width: 7rem;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+#copyright {
+  width: 100vw; /* Full width of the viewport */
+  background-color: rgb(0, 0, 0);
+  color: rgb(167, 75, 1);
+  padding: 35px;
+  text-align: center;
+  font-weight: 800;
+  opacity: 65%;
+  font-size: 1.2rem;
+  position: absolute; /* Stick it to the bottom of the page */
+  left: 0;
+  bottom: 0;
+  z-index: 1; 
+  
+}
+
+#image1 {
+  width: 100%; /* Adjust width to be fully responsive */
+  height: 100vh;
+  border-radius: 15px;
+  opacity: 78%;
+}
+
+#image2 {
+  height: 100vh;
+  width: 100%;
+  border-radius: 15px;
+  opacity: 78%;
+}
+
+#button1, #button2 {
+  position: absolute;
+  bottom: 10%; /* Push to the bottom of the card */
+  left: 50%;
+  transform: translateX(-50%); /* Center the button horizontally */
+  z-index: 2; /* Ensure button is above the image */
+  padding: 0.8rem 2rem;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  color: #000; /* Text color for contrast */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+.custom-modal {
+  background-color: rgb(0, 0, 0);
+  opacity: 90%;
+}
+
+.modal-body {
+  background-color: orange;
+}
+
+Link {
+  text-decoration: none;
+}
+
+/* Responsive font adjustments using media queries */
+@media (max-width: 768px) {
+  #nav ul {
+    font-size: .5rem; /* Smaller font size for mobile */
+    flex-direction: row; /* Stack nav items vertically */
+    gap: 1rem; /* More space between items */
+    padding: 0.5rem; /* Adjust padding */
+  }
+
+  #nav ul li a {
+    font-size: .5rem; /* Scale nav links down */
+  }
+
+  h2 {
+    font-size: 2rem; /* Smaller heading */
+  }
+
+  .topCard #cardlist {
+    font-size: .2rem;
+  }
+  
+  #card2 li {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+ 
+  .topCard h2 {
+    font-size: 2rem;
+  }
+  .topCard p {
+    font-size: 1rem;
+  }
+  .cards {
+    width: 100vw;
+    flex-direction: column; /* Stack cards vertically */
+  }
+  #canvas3 {
+    margin-left: 50%
+  }
+  #card1, #card2 {
+    
+    width: 100%; 
+   
+  }
+
+ 
+}
+
+@media (max-width: 480px) {
+  #nav ul {
+    font-size: .5rem; /* Further reduce font size for very small screens */
+    padding: 0.3rem;
+  }
+  .topCard h2, .topCard p {
+    font-size: 1.5rem;
+  }
+  .cards {
+    margin-top: 3rem; /* Ensure space from video */
+  }
+  #cardlist li {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  .cards {
+    font-size: 1rem;
+  }
+  #card1 li {
+    font-size: 1rem;
+  }
+  #card2 li {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  .cards {
+    width: 100vw
+  }
+  #canvas3 {
+    margin-left: 50%
+  }
+}
+
+
+

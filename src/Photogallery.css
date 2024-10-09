@@ -1,0 +1,19 @@
+/* Grid layout for the gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .gallery-image:hover {
+    transform: scale(1.05);
+  }
+  

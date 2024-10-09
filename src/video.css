@@ -1,0 +1,89 @@
+#video {
+  position: absolute;
+  top: 3.2rem;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  opacity: 75%;
+}
+  
+  #video > div {
+    object-fit: cover !important;
+    width: 100vw;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    
+  }
+  
+  #video > .banner-video, 
+  .react-player {
+    width: 100vw !important;
+    height: 80% !important;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+  }
+  
+  .react-player__preview, 
+  .react-player__wrapper {
+    width: 100vw !important;
+    height: 80vh !important;
+  }
+  
+  .react-player video {
+    object-fit: cover !important;
+    width: 100vw;
+    height: 80vh; /* Ensure video covers full viewport */
+  }
+  
+  @media (max-width: 768px) {
+    #video > .banner-video, 
+    .react-player {
+    width: 100vw !important;
+    height: 50% !important;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .react-player__preview, 
+  .react-player__wrapper {
+    width: 50vw !important;
+    height: 50vh !important;
+  }
+
+  .react-player video {
+    object-fit: cover !important;
+    width: 50vw;
+    height: 50vh; /* Ensure video covers full viewport */
+  }
+  }
+
+  @media (max-width: 380px) {
+    #video > .banner-video, 
+    .react-player {
+    width: 50vw !important;
+    height: 50% !important;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .react-player__preview, 
+  .react-player__wrapper {
+    width: 50vw !important;
+    height: 50vh !important;
+  }
+
+  .react-player video {
+    object-fit: cover !important;
+    width: 50vw;
+    height: 50vh; /* Ensure video covers full viewport */
+  }
+  }
