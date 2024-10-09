@@ -177,22 +177,41 @@ h2 {
 
 
 .topCard ul {
-  font-size: 1.8rem;
-  margin-bottom: 5rem;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
 }
 
-.topCard li {
-  font-size: 1.8rem;
-  margin-bottom: 5rem;
+.topCard ul li {
+  flex: 1 1 calc(33.333% - 20px); /* Adjust for spacing */
+  margin: 10px;
+  text-align: center;
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  box-sizing: border-box; /* Ensure padding/margins fit within the box */
 }
 
-.topCard img {
-  width: 50%; /* Make the image responsive */
+.topCard ul li img {
+  width: 100%; /* Ensure images fit within the li */
   height: auto;
+  max-width: 250px; /* Ensure images don't get too large */
+  display: block;
+  margin-bottom: 10px;
+}
+
+.topCard ul li h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.topCard ul li p, .topCard ul li h2 {
+  font-size: 0.9rem;
+  margin: 5px 0;
 }
 
 .cards {
@@ -324,33 +343,26 @@ Link {
 /* Responsive font adjustments using media queries */
 @media (max-width: 768px) {
   #nav ul {
-    font-size: .5rem; /* Smaller font size for mobile */
+    font-size: 1rem; /* Smaller font size for mobile */
     flex-direction: row; /* Stack nav items vertically */
     gap: 1rem; /* More space between items */
     padding: 0.5rem; /* Adjust padding */
   }
 
   #nav ul li a {
-    font-size: .5rem; /* Scale nav links down */
+    font-size: 1rem; /* Scale nav links down */
   }
-
-  h2 {
-    font-size: 2rem; /* Smaller heading */
-  }
-
-  .topCard #cardlist {
-    font-size: .2rem;
-  }
-  
+ 
   #card2 li {
     font-size: 1rem;
   }
-  h2 {
-    font-size: 2rem;
+
+  .topCard {
+    margin-top: 24.5rem;
   }
  
   .topCard h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .topCard p {
     font-size: 1rem;
@@ -367,9 +379,25 @@ Link {
     width: 100%; 
    
   }
+  .topCard ul li {
+    font-size: 1rem; /* Show two items per row on smaller screens */
+  }
 
- 
+.topCard ul li img {
+    
+    height: auto;
+    max-width: 5rem;
 }
+
+.topCard ul li h3 {
+    font-size: 1rem;
+}
+
+.topCard ul li p {
+    font-size: 0.85rem;
+}
+}
+
 
 @media (max-width: 600px) {
   .topCard {
@@ -385,7 +413,16 @@ Link {
       padding: 10px; /* Adjust as necessary */
       box-sizing: border-box; /* Include padding in width calculations */
   }
+
+  .topCard h1 {
+        font-size: 1rem; /* Smaller heading font size */
+    }
+
+  .topCard p {
+        font-size: 0.9rem; /* Smaller text font size */
+    }
 }
+
 
 @media (max-width: 480px) {
   #nav ul {
@@ -432,6 +469,12 @@ Link {
 
 .topCard p {
     font-size: 1em; /* Adjust paragraph font size */
+}
+.topCard ul li {
+  font-size: 1rem; /* One item per row for mobile */
+}
+.topCard ul li img {
+  width: 30%; /* Shrink images a bit more */
 }
 }
 
