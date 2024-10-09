@@ -197,7 +197,7 @@ h2 {
 }
 
 .topCard ul li img {
-  width: 100%; /* Ensure images fit within the li */
+  width: 60%; /* Ensure images fit within the li */
   height: auto;
   max-width: 250px; /* Ensure images don't get too large */
   display: block;
