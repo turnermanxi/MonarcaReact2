@@ -54,7 +54,7 @@ function Card() {
                             className='icon' />Landscape Lighting</li>
                         </div>
                     </ul>
-                <h3>Top Lawn Care Services in Tampa – MonarcaOutdoors</h3>
+                <h3>Top Lawn Care Services in Tampa</h3>
                 <p>
                  Looking for reliable, professional lawn care services in Tampa?
                  At MonarcaOutdoors, we specialize in keeping your yard in perfect shape,
@@ -72,6 +72,10 @@ function Card() {
                 <div id='card1'>
                     <img src={myImage2} alt="Lawn Maintenance" id="image2"/>
                     <h2>Lawn Maintenance</h2>
+                    <p>We're a reliable lawn maintenance services, 
+                        including mowing, edging, trimming, and debris removal. 
+                        We serve the Tampa area, ensuring your lawn stays healthy 
+                        and well-kept year-round."</p>
                     
                     <div className="container-mt-5">
                         <button id='button1' onClick={toggleLawnMaintenanceModal}>
@@ -84,6 +88,10 @@ function Card() {
                 <div id='card2'>
                     <img src={myImage} alt="Monarca Lawn Care" id="image1" />
                     <h2>Lawn Care</h2>
+                    <p>We offer professional lawn care in Tampa, including mowing, 
+                        edging, trimming, and leaf cleanup. Our services are designed to keep your 
+                        lawn neat and well-maintained all year long.</p>
+                    
                     
                     <div className="container-mt-5">
                         <button id ='button2' onClick={toggleLawnCareModal}>

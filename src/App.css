@@ -263,8 +263,14 @@ h2 {
   object-fit: cover;
 }
 
-#card1 li {
-  font-size: 2rem;
+#card1 p, #card2 p {
+  font-size: .8rem;
+  padding: 4rem;
+  position: absolute;
+  top: 7.3rem;
+  text-align: left;
+  color: white;
+  font-weight: 700;
 }
 
 #card2 li {
@@ -273,7 +279,7 @@ h2 {
 
 #card1 h2, #card2 h2 {
   position: absolute;
-  top: 10%; /* Adjust to desired position */
+  top: 3%; /* Adjust to desired position */
   left: 10%; /* Ensure it's placed on the card */
   font-size: 2rem;
   margin: 0;
@@ -339,6 +345,13 @@ img {
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
+}
+
+#button1:hover, #button2:hover {
+  background-color: black;
+  color: white;
+  border-color: blue;
+  transition: color 0.6s;
 }
 
 
@@ -428,6 +441,17 @@ Link {
       margin: 0;   /* Reset margin to avoid overflow */
       padding: 10px; /* Adjust as necessary */
       box-sizing: border-box; /* Include padding in width calculations */
+  }
+
+  #card1 h2 {
+    top: -10%;
+    font-size: 1.8rem;
+
+  }
+
+  #card1 p, #card2 p {
+    top: 15%;
+    padding: 5rem;
   }
 
   .topCard h1 {
